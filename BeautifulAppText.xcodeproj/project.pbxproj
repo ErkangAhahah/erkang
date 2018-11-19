@@ -24,7 +24,6 @@
 		67ACC6B721A29D6200AD90FC /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 67ACC6B621A29D6200AD90FC /* libxml2.tbd */; };
 		67ACC6B921A29D6C00AD90FC /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67ACC6B821A29D6C00AD90FC /* NotificationCenter.framework */; };
 		67E69F76219C20D000B3D3DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E69F75219C20D000B3D3DE /* AppDelegate.swift */; };
-		67E69F78219C20D000B3D3DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E69F77219C20D000B3D3DE /* ViewController.swift */; };
 		67E69F7B219C20D000B3D3DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67E69F79219C20D000B3D3DE /* Main.storyboard */; };
 		67E69F7D219C20D100B3D3DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67E69F7C219C20D100B3D3DE /* Assets.xcassets */; };
 		67E69F80219C20D100B3D3DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67E69F7E219C20D100B3D3DE /* LaunchScreen.storyboard */; };
@@ -69,7 +68,6 @@
 		67ACC6BA21A29DE800AD90FC /* beautifulAppText-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "beautifulAppText-Bridging-Header.h"; sourceTree = "<group>"; };
 		67E69F72219C20D000B3D3DE /* BeautifulAppText.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeautifulAppText.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67E69F75219C20D000B3D3DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		67E69F77219C20D000B3D3DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		67E69F7A219C20D000B3D3DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		67E69F7C219C20D100B3D3DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67E69F7F219C20D100B3D3DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -148,10 +146,137 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		67ACC6BB21A2B09D00AD90FC /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Constant;
+			path = BeautifulAppText/Constant;
+			sourceTree = "<group>";
+		};
+		67ACC6BC21A2B0A400AD90FC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				67ACC6C721A2B1CC00AD90FC /* FindAppController */,
+				67ACC6C321A2B1CC00AD90FC /* FindAppDetailController */,
+				67ACC6C421A2B1CC00AD90FC /* HomeController */,
+				67ACC6C821A2B1CC00AD90FC /* HomeDetailController */,
+				67ACC6C621A2B1CC00AD90FC /* MainController */,
+				67ACC6C521A2B1CC00AD90FC /* MenuController */,
+				67ACC6C921A2B1CC00AD90FC /* SettingController */,
+			);
+			name = Controllers;
+			path = BeautifulAppText/Controllers;
+			sourceTree = "<group>";
+		};
+		67ACC6BD21A2B0B000AD90FC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			path = BeautifulAppText/Resources;
+			sourceTree = "<group>";
+		};
+		67ACC6BE21A2B0B000AD90FC /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Extension;
+			path = BeautifulAppText/Extension;
+			sourceTree = "<group>";
+		};
+		67ACC6BF21A2B0B000AD90FC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			path = BeautifulAppText/Views;
+			sourceTree = "<group>";
+		};
+		67ACC6C021A2B0B000AD90FC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Services;
+			path = BeautifulAppText/Services;
+			sourceTree = "<group>";
+		};
+		67ACC6C121A2B0B000AD90FC /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Other;
+			path = BeautifulAppText/Other;
+			sourceTree = "<group>";
+		};
+		67ACC6C221A2B0B000AD90FC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			path = BeautifulAppText/Models;
+			sourceTree = "<group>";
+		};
+		67ACC6C321A2B1CC00AD90FC /* FindAppDetailController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FindAppDetailController;
+			sourceTree = "<group>";
+		};
+		67ACC6C421A2B1CC00AD90FC /* HomeController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HomeController;
+			sourceTree = "<group>";
+		};
+		67ACC6C521A2B1CC00AD90FC /* MenuController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MenuController;
+			sourceTree = "<group>";
+		};
+		67ACC6C621A2B1CC00AD90FC /* MainController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MainController;
+			sourceTree = "<group>";
+		};
+		67ACC6C721A2B1CC00AD90FC /* FindAppController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FindAppController;
+			sourceTree = "<group>";
+		};
+		67ACC6C821A2B1CC00AD90FC /* HomeDetailController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HomeDetailController;
+			sourceTree = "<group>";
+		};
+		67ACC6C921A2B1CC00AD90FC /* SettingController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SettingController;
+			sourceTree = "<group>";
+		};
 		67E69F69219C20D000B3D3DE = {
 			isa = PBXGroup;
 			children = (
-				67ACC6BA21A29DE800AD90FC /* beautifulAppText-Bridging-Header.h */,
+				67ACC6BE21A2B0B000AD90FC /* Extension */,
+				67ACC6C221A2B0B000AD90FC /* Models */,
+				67ACC6C121A2B0B000AD90FC /* Other */,
+				67ACC6BD21A2B0B000AD90FC /* Resources */,
+				67ACC6C021A2B0B000AD90FC /* Services */,
+				67ACC6BF21A2B0B000AD90FC /* Views */,
+				67ACC6BC21A2B0A400AD90FC /* Controllers */,
+				67ACC6BB21A2B09D00AD90FC /* Constant */,
 				67E69F74219C20D000B3D3DE /* BeautifulAppText */,
 				67E69F89219C20D200B3D3DE /* BeautifulAppTextTests */,
 				67E69F94219C20D200B3D3DE /* BeautifulAppTextUITests */,
@@ -174,8 +299,8 @@
 		67E69F74219C20D000B3D3DE /* BeautifulAppText */ = {
 			isa = PBXGroup;
 			children = (
+				67ACC6BA21A29DE800AD90FC /* beautifulAppText-Bridging-Header.h */,
 				67E69F75219C20D000B3D3DE /* AppDelegate.swift */,
-				67E69F77219C20D000B3D3DE /* ViewController.swift */,
 				67E69F79219C20D000B3D3DE /* Main.storyboard */,
 				67E69F7C219C20D100B3D3DE /* Assets.xcassets */,
 				67E69F7E219C20D100B3D3DE /* LaunchScreen.storyboard */,
@@ -401,7 +526,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67E69F78219C20D000B3D3DE /* ViewController.swift in Sources */,
 				67E69F76219C20D000B3D3DE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -589,7 +713,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.erkang.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = erkangahhhh;
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/quanshijiezuimeilideerkang/Desktop/Person Program/11月学习资料/erkang/beautifulAppText-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/quanshijiezuimeilideerkang/Desktop/Person Program/11月学习资料/erkang/BeautifulAppText/beautifulAppText-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -611,7 +735,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.erkang.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = erkangahhhh;
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/quanshijiezuimeilideerkang/Desktop/Person Program/11月学习资料/erkang/beautifulAppText-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/quanshijiezuimeilideerkang/Desktop/Person Program/11月学习资料/erkang/BeautifulAppText/beautifulAppText-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
