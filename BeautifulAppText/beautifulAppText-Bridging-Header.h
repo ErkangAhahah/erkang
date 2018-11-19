@@ -9,5 +9,5 @@
 #ifndef beautifulAppText_Bridging_Header_h
 #define beautifulAppText_Bridging_Header_h
 
-
+#import <YYWebImage/YYWebImage.h>
 #endif /* beautifulAppText_Bridging_Header_h */

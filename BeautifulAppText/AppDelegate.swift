@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MonkeyKing
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.makeKeyAndVisible()
+        let navigationController = IFBaseNavController(rootViewController:MainController());window?.rootViewController = navigationController;
+        
+        //注册分享账号
+        MonkeyKing.registerAccount(.weChat(appID: "wx5e0a9f56decb72ba", appKey: "932a03ea7c85123ce25117fcf493fcf6", miniAppID: ""))
+        
         return true
     }
 

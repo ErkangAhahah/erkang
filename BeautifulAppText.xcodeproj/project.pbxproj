@@ -23,6 +23,9 @@
 		67ACC6B521A29D5900AD90FC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67ACC6B421A29D5900AD90FC /* CoreGraphics.framework */; };
 		67ACC6B721A29D6200AD90FC /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 67ACC6B621A29D6200AD90FC /* libxml2.tbd */; };
 		67ACC6B921A29D6C00AD90FC /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67ACC6B821A29D6C00AD90FC /* NotificationCenter.framework */; };
+		67ACC6CE21A2B24600AD90FC /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67ACC6CD21A2B24600AD90FC /* MainController.swift */; };
+		67ACC6D021A2B2E300AD90FC /* IFBaseNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67ACC6CF21A2B2E300AD90FC /* IFBaseNavController.swift */; };
+		67ACC6D221A2B42E00AD90FC /* UIConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67ACC6D121A2B42E00AD90FC /* UIConstant.swift */; };
 		67E69F76219C20D000B3D3DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E69F75219C20D000B3D3DE /* AppDelegate.swift */; };
 		67E69F7B219C20D000B3D3DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67E69F79219C20D000B3D3DE /* Main.storyboard */; };
 		67E69F7D219C20D100B3D3DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67E69F7C219C20D100B3D3DE /* Assets.xcassets */; };
@@ -66,6 +69,9 @@
 		67ACC6B621A29D6200AD90FC /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 		67ACC6B821A29D6C00AD90FC /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		67ACC6BA21A29DE800AD90FC /* beautifulAppText-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "beautifulAppText-Bridging-Header.h"; sourceTree = "<group>"; };
+		67ACC6CD21A2B24600AD90FC /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		67ACC6CF21A2B2E300AD90FC /* IFBaseNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IFBaseNavController.swift; sourceTree = "<group>"; };
+		67ACC6D121A2B42E00AD90FC /* UIConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIConstant.swift; sourceTree = "<group>"; };
 		67E69F72219C20D000B3D3DE /* BeautifulAppText.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeautifulAppText.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67E69F75219C20D000B3D3DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67E69F7A219C20D000B3D3DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -149,6 +155,7 @@
 		67ACC6BB21A2B09D00AD90FC /* Constant */ = {
 			isa = PBXGroup;
 			children = (
+				67ACC6D121A2B42E00AD90FC /* UIConstant.swift */,
 			);
 			name = Constant;
 			path = BeautifulAppText/Constant;
@@ -164,6 +171,7 @@
 				67ACC6C621A2B1CC00AD90FC /* MainController */,
 				67ACC6C521A2B1CC00AD90FC /* MenuController */,
 				67ACC6C921A2B1CC00AD90FC /* SettingController */,
+				67ACC6CF21A2B2E300AD90FC /* IFBaseNavController.swift */,
 			);
 			name = Controllers;
 			path = BeautifulAppText/Controllers;
@@ -241,6 +249,7 @@
 		67ACC6C621A2B1CC00AD90FC /* MainController */ = {
 			isa = PBXGroup;
 			children = (
+				67ACC6CD21A2B24600AD90FC /* MainController.swift */,
 			);
 			path = MainController;
 			sourceTree = "<group>";
@@ -526,7 +535,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67ACC6CE21A2B24600AD90FC /* MainController.swift in Sources */,
 				67E69F76219C20D000B3D3DE /* AppDelegate.swift in Sources */,
+				67ACC6D021A2B2E300AD90FC /* IFBaseNavController.swift in Sources */,
+				67ACC6D221A2B42E00AD90FC /* UIConstant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
