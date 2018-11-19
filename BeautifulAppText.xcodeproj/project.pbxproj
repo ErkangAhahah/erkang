@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28380D7938860EB5AB0DDDC2 /* Pods_BeautifulAppText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDB0CC20590124CB3A13827E /* Pods_BeautifulAppText.framework */; };
 		67E69F76219C20D000B3D3DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E69F75219C20D000B3D3DE /* AppDelegate.swift */; };
 		67E69F78219C20D000B3D3DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E69F77219C20D000B3D3DE /* ViewController.swift */; };
 		67E69F7B219C20D000B3D3DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67E69F79219C20D000B3D3DE /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		22D58898ED93B9B8CB25EA01 /* Pods-BeautifulAppText.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeautifulAppText.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BeautifulAppText/Pods-BeautifulAppText.debug.xcconfig"; sourceTree = "<group>"; };
 		67E69F72219C20D000B3D3DE /* BeautifulAppText.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeautifulAppText.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67E69F75219C20D000B3D3DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67E69F77219C20D000B3D3DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		67E69F91219C20D200B3D3DE /* BeautifulAppTextUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeautifulAppTextUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		67E69F95219C20D200B3D3DE /* BeautifulAppTextUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeautifulAppTextUITests.swift; sourceTree = "<group>"; };
 		67E69F97219C20D200B3D3DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED112C5BC6BD2B512FCB7043 /* Pods-BeautifulAppText.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeautifulAppText.release.xcconfig"; path = "Pods/Target Support Files/Pods-BeautifulAppText/Pods-BeautifulAppText.release.xcconfig"; sourceTree = "<group>"; };
+		EDB0CC20590124CB3A13827E /* Pods_BeautifulAppText.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeautifulAppText.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28380D7938860EB5AB0DDDC2 /* Pods_BeautifulAppText.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		185B476E88E03883848FA4D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EDB0CC20590124CB3A13827E /* Pods_BeautifulAppText.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		67E69F69219C20D000B3D3DE = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +94,8 @@
 				67E69F89219C20D200B3D3DE /* BeautifulAppTextTests */,
 				67E69F94219C20D200B3D3DE /* BeautifulAppTextUITests */,
 				67E69F73219C20D000B3D3DE /* Products */,
+				CBA3B2676BB95712EE81FF67 /* Pods */,
+				185B476E88E03883848FA4D3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +140,15 @@
 			path = BeautifulAppTextUITests;
 			sourceTree = "<group>";
 		};
+		CBA3B2676BB95712EE81FF67 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				22D58898ED93B9B8CB25EA01 /* Pods-BeautifulAppText.debug.xcconfig */,
+				ED112C5BC6BD2B512FCB7043 /* Pods-BeautifulAppText.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 67E69F9A219C20D200B3D3DE /* Build configuration list for PBXNativeTarget "BeautifulAppText" */;
 			buildPhases = (
+				8C43DA2CB21F1F8390579571 /* [CP] Check Pods Manifest.lock */,
 				67E69F6E219C20D000B3D3DE /* Sources */,
 				67E69F6F219C20D000B3D3DE /* Frameworks */,
 				67E69F70219C20D000B3D3DE /* Resources */,
+				269018C51B72C84450BBB444 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -250,6 +276,63 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		269018C51B72C84450BBB444 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BeautifulAppText/Pods-BeautifulAppText-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/MonkeyKing/MonkeyKing.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/YYCache/YYCache.framework",
+				"${BUILT_PRODUCTS_DIR}/YYImage/YYImage.framework",
+				"${BUILT_PRODUCTS_DIR}/YYWebImage/YYWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MonkeyKing.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYCache.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BeautifulAppText/Pods-BeautifulAppText-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C43DA2CB21F1F8390579571 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BeautifulAppText-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		67E69F6E219C20D000B3D3DE /* Sources */ = {
@@ -430,6 +513,7 @@
 		};
 		67E69F9B219C20D200B3D3DE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22D58898ED93B9B8CB25EA01 /* Pods-BeautifulAppText.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -450,6 +534,7 @@
 		};
 		67E69F9C219C20D200B3D3DE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED112C5BC6BD2B512FCB7043 /* Pods-BeautifulAppText.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
