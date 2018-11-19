@@ -7,7 +7,7 @@ target 'BeautifulAppText' do
     pod 'Moya’,  	    ‘~>10.0.0'
     pod 'RxSwift'
     pod 'RxCocoa'
-    pod 'MonkeyKing',   '~> 1.1.0'
+    pod 'MonkeyKing'
     pod 'YYWebImage'
 
 end

@@ -8,6 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		28380D7938860EB5AB0DDDC2 /* Pods_BeautifulAppText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDB0CC20590124CB3A13827E /* Pods_BeautifulAppText.framework */; };
+		67ACC69D21A29CE500AD90FC /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67ACC69C21A29CE500AD90FC /* AdSupport.framework */; };
+		67ACC69F21A29CF900AD90FC /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 67ACC69E21A29CF900AD90FC /* libicucore.tbd */; };
+		67ACC6A121A29D0200AD90FC /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 67ACC6A021A29D0200AD90FC /* libz.tbd */; };
+		67ACC6A321A29D0F00AD90FC /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67ACC6A221A29D0F00AD90FC /* MobileCoreServices.framework */; };
+		67ACC6A521A29D1500AD90FC /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67ACC6A421A29D1500AD90FC /* AssetsLibrary.framework */; };
+		67ACC6A721A29D1B00AD90FC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67ACC6A621A29D1B00AD90FC /* QuartzCore.framework */; };
+		67ACC6A921A29D2600AD90FC /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67ACC6A821A29D2600AD90FC /* CoreFoundation.framework */; };
+		67ACC6AB21A29D2D00AD90FC /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67ACC6AA21A29D2D00AD90FC /* Accelerate.framework */; };
+		67ACC6AD21A29D3400AD90FC /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67ACC6AC21A29D3400AD90FC /* ImageIO.framework */; };
+		67ACC6AF21A29D3F00AD90FC /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 67ACC6AE21A29D3F00AD90FC /* libsqlite3.tbd */; };
+		67ACC6B121A29D4B00AD90FC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67ACC6B021A29D4B00AD90FC /* UIKit.framework */; };
+		67ACC6B321A29D5000AD90FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67ACC6B221A29D5000AD90FC /* Foundation.framework */; };
+		67ACC6B521A29D5900AD90FC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67ACC6B421A29D5900AD90FC /* CoreGraphics.framework */; };
+		67ACC6B721A29D6200AD90FC /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 67ACC6B621A29D6200AD90FC /* libxml2.tbd */; };
+		67ACC6B921A29D6C00AD90FC /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67ACC6B821A29D6C00AD90FC /* NotificationCenter.framework */; };
 		67E69F76219C20D000B3D3DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E69F75219C20D000B3D3DE /* AppDelegate.swift */; };
 		67E69F78219C20D000B3D3DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E69F77219C20D000B3D3DE /* ViewController.swift */; };
 		67E69F7B219C20D000B3D3DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67E69F79219C20D000B3D3DE /* Main.storyboard */; };
@@ -36,6 +51,22 @@
 
 /* Begin PBXFileReference section */
 		22D58898ED93B9B8CB25EA01 /* Pods-BeautifulAppText.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeautifulAppText.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BeautifulAppText/Pods-BeautifulAppText.debug.xcconfig"; sourceTree = "<group>"; };
+		67ACC69C21A29CE500AD90FC /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		67ACC69E21A29CF900AD90FC /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		67ACC6A021A29D0200AD90FC /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		67ACC6A221A29D0F00AD90FC /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		67ACC6A421A29D1500AD90FC /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		67ACC6A621A29D1B00AD90FC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		67ACC6A821A29D2600AD90FC /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		67ACC6AA21A29D2D00AD90FC /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		67ACC6AC21A29D3400AD90FC /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		67ACC6AE21A29D3F00AD90FC /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		67ACC6B021A29D4B00AD90FC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		67ACC6B221A29D5000AD90FC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		67ACC6B421A29D5900AD90FC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		67ACC6B621A29D6200AD90FC /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		67ACC6B821A29D6C00AD90FC /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		67ACC6BA21A29DE800AD90FC /* beautifulAppText-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "beautifulAppText-Bridging-Header.h"; sourceTree = "<group>"; };
 		67E69F72219C20D000B3D3DE /* BeautifulAppText.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeautifulAppText.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67E69F75219C20D000B3D3DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67E69F77219C20D000B3D3DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +89,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67ACC6B921A29D6C00AD90FC /* NotificationCenter.framework in Frameworks */,
+				67ACC6B721A29D6200AD90FC /* libxml2.tbd in Frameworks */,
+				67ACC6B521A29D5900AD90FC /* CoreGraphics.framework in Frameworks */,
+				67ACC6B321A29D5000AD90FC /* Foundation.framework in Frameworks */,
+				67ACC6B121A29D4B00AD90FC /* UIKit.framework in Frameworks */,
+				67ACC6AF21A29D3F00AD90FC /* libsqlite3.tbd in Frameworks */,
+				67ACC6AD21A29D3400AD90FC /* ImageIO.framework in Frameworks */,
+				67ACC6AB21A29D2D00AD90FC /* Accelerate.framework in Frameworks */,
+				67ACC6A921A29D2600AD90FC /* CoreFoundation.framework in Frameworks */,
+				67ACC6A721A29D1B00AD90FC /* QuartzCore.framework in Frameworks */,
+				67ACC6A521A29D1500AD90FC /* AssetsLibrary.framework in Frameworks */,
+				67ACC6A321A29D0F00AD90FC /* MobileCoreServices.framework in Frameworks */,
+				67ACC6A121A29D0200AD90FC /* libz.tbd in Frameworks */,
+				67ACC69F21A29CF900AD90FC /* libicucore.tbd in Frameworks */,
+				67ACC69D21A29CE500AD90FC /* AdSupport.framework in Frameworks */,
 				28380D7938860EB5AB0DDDC2 /* Pods_BeautifulAppText.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -82,6 +128,21 @@
 		185B476E88E03883848FA4D3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				67ACC6B821A29D6C00AD90FC /* NotificationCenter.framework */,
+				67ACC6B621A29D6200AD90FC /* libxml2.tbd */,
+				67ACC6B421A29D5900AD90FC /* CoreGraphics.framework */,
+				67ACC6B221A29D5000AD90FC /* Foundation.framework */,
+				67ACC6B021A29D4B00AD90FC /* UIKit.framework */,
+				67ACC6AE21A29D3F00AD90FC /* libsqlite3.tbd */,
+				67ACC6AC21A29D3400AD90FC /* ImageIO.framework */,
+				67ACC6AA21A29D2D00AD90FC /* Accelerate.framework */,
+				67ACC6A821A29D2600AD90FC /* CoreFoundation.framework */,
+				67ACC6A621A29D1B00AD90FC /* QuartzCore.framework */,
+				67ACC6A421A29D1500AD90FC /* AssetsLibrary.framework */,
+				67ACC6A221A29D0F00AD90FC /* MobileCoreServices.framework */,
+				67ACC6A021A29D0200AD90FC /* libz.tbd */,
+				67ACC69E21A29CF900AD90FC /* libicucore.tbd */,
+				67ACC69C21A29CE500AD90FC /* AdSupport.framework */,
 				EDB0CC20590124CB3A13827E /* Pods_BeautifulAppText.framework */,
 			);
 			name = Frameworks;
@@ -90,6 +151,7 @@
 		67E69F69219C20D000B3D3DE = {
 			isa = PBXGroup;
 			children = (
+				67ACC6BA21A29DE800AD90FC /* beautifulAppText-Bridging-Header.h */,
 				67E69F74219C20D000B3D3DE /* BeautifulAppText */,
 				67E69F89219C20D200B3D3DE /* BeautifulAppTextTests */,
 				67E69F94219C20D200B3D3DE /* BeautifulAppTextUITests */,
@@ -527,6 +589,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.erkang.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = erkangahhhh;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/quanshijiezuimeilideerkang/Desktop/Person Program/11月学习资料/erkang/beautifulAppText-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -548,6 +611,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.erkang.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = erkangahhhh;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/quanshijiezuimeilideerkang/Desktop/Person Program/11月学习资料/erkang/beautifulAppText-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

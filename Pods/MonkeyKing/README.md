@@ -2,22 +2,26 @@
 <a href="http://cocoadocs.org/docsets/MonkeyKing"><img src="https://img.shields.io/cocoapods/v/MonkeyKing.svg?style=flat"></a>
 <a href="https://github.com/Carthage/Carthage/"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat"></a>
 </p>
+<p>
+<a href="http://cocoapods.org/pods/MonkeyKing"><img src="https://img.shields.io/cocoapods/at/MonkeyKing.svg?label=Apps%20Using%20MonkeyKing&colorB=28B9FE"></a>
+<a href="http://cocoapods.org/pods/MonkeyKing"><img src="https://img.shields.io/cocoapods/dt/MonkeyKing.svg?label=Total%20Downloads&colorB=28B9FE"></a>
+</p>
 
 # MonkeyKing
 
 MonkeyKing helps you post messages to Chinese Social Networks, without their buggy SDKs.
 
-MonkeyKing uses the same analysis process of [openshare](https://github.com/100apps/openshare), support share **Text**, **URL**, **Image**, **Audio**, **Video**, and **File** to **WeChat**, **QQ**, **Alipay** or **Weibo**. MonkeyKing also can post messages to Weibo by webpage. (Note: Audio and Video are only specifically for WeChat or QQ, File is only for QQ Dataline)
+MonkeyKing uses the same analysis process of [openshare](https://github.com/100apps/openshare), support share **Text**, **URL**, **Image**, **Audio**, **Video**, and **File** to **WeChat**, **QQ**, **Alipay** or **Weibo**. MonkeyKing also can post messages to Weibo by webpage. (Note: Audio and Video are specifically for WeChat or QQ, File is only for QQ Dataline)
 
-One more thing: MonkeyKing supports **OAuth**.
-
-And, now MonkeyKing supports **Mobile payment** via WeChat and Alipay!
+MonkeyKing also supports **OAuth** and **Mobile payment** via WeChat and Alipay!
 
 ## Requirements
 
-Swift 3.0, iOS 8.0
+Swift 4.2, iOS 8
 
-(Swift 2.3, use version 0.9.4)
+(For Swift 4.1/4.0, use version 1.11.0)
+
+(For Swift 3, use version 1.3.0)
 
 ## Examples
 
@@ -25,16 +29,16 @@ Swift 3.0, iOS 8.0
 
 Example: Share to WeChat (微信)：
 
-1. In your Project Target's `Info.plist`, set `URL Type`, `LSApplicationQueriesSchemes`, `NSAppTransportSecurity` as follow:
+1. In your Project Target's `Info.plist`, set `URL Type`, `LSApplicationQueriesSchemes` as follow:
 
-	![infoList.png](https://raw.githubusercontent.com/nixzhu/MonkeyKing/master/images/infoList.png)
+	<img src="https://raw.githubusercontent.com/nixzhu/MonkeyKing/master/images/infoList.png" width="600">
 
 2. Register account: // it's not necessary to do it here, but for convenient
 
 	```swift
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
-	    MonkeyKing.registerAccount(.weChat(appID: "xxx", appKey: "yyy"))
+	    MonkeyKing.registerAccount(.weChat(appID: "xxx", appKey: "yyy", miniAppID: nil))
 
 	    return true
 	}
@@ -43,7 +47,8 @@ Example: Share to WeChat (微信)：
 3. If you need to handle call back, add following code:
 
 	```swift
-    func application(_ application: UIApplication, openURL url: URL, sourceApplication: String?, annotation: Any) -> Bool {
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+    //func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool { // only for iOS 8
 
         if MonkeyKing.handleOpenURL(url) {
             return true
@@ -60,7 +65,7 @@ Example: Share to WeChat (微信)：
 	```swift
     @IBAction func shareURLToWeChatSession(sender: UIButton) {
 
-        MonkeyKing.registerAccount(.weChat(appID: "xxx", appKey: "yyy")) // you can do it here (just before deliver)
+        MonkeyKing.registerAccount(.weChat(appID: "xxx", appKey: "yyy", miniAppID: nil)) // you can do it here (just before deliver)
 
         let message = MonkeyKing.Message.weChat(.session(info: (
             title: "Session",
@@ -89,9 +94,20 @@ MonkeyKing.oauth(for: .weibo) { (oauthInfo, response, error) -> Void in
 }
 ```
 
+or, WeChat OAuth for code only
+
+``` swift
+MonkeyKing.weChatOAuthForCode { [weak self] (code, error) in
+    guard let code = code else {
+        return
+    }
+    // TODO: fetch info with code
+}
+```
+
 If user don't have Weibo App installed on their devices then MonkeyKing will use web OAuth:
 
-![weiboOAuth](https://raw.githubusercontent.com/nixzhu/MonkeyKing/master/images/wbOAuth.png)
+<img src="https://raw.githubusercontent.com/nixzhu/MonkeyKing/master/images/wbOAuth.png" width="240">
 
 
 ### Pay
@@ -99,7 +115,8 @@ If user don't have Weibo App installed on their devices then MonkeyKing will use
 Example: Alipay
 
 ```swift
-MonkeyKing.deliver(MonkeyKing.Order.alipay(urlString: "https://example.com/pay.php?payType=alipay")) { result in
+let order = MonkeyKing.Order.alipay(urlString: urlString, scheme: nil)
+MonkeyKing.deliver(order) { result in
     print("result: \(result)")
 }
 ```
@@ -107,20 +124,36 @@ MonkeyKing.deliver(MonkeyKing.Order.alipay(urlString: "https://example.com/pay.p
 
 <br />
 
-![weiboOAuth](https://raw.githubusercontent.com/nixzhu/MonkeyKing/master/images/alipay.gif)
+<img src="https://raw.githubusercontent.com/nixzhu/MonkeyKing/master/images/alipay.gif" width="240">
 
+
+### Launch WeChat Mini App
+
+``` swift
+let path = "..."
+MonkeyKing.launch(.weChat(.miniApp(username: "gh_XXX", path: path, type: .release))) { result in
+    switch result {
+    case .success:
+        break
+    case .failure(let error):
+        print("error:", error)
+    }
+}
+```
+
+Note that username has a `gh_` prefix (原始ID).
 
 ### More
 
 If you like to use `UIActivityViewController` for sharing then MonkeyKing has `AnyActivity` which can help you.
 
-![System Share](https://raw.githubusercontent.com/nixzhu/MonkeyKing/master/images/system_share.png)
+<img src="https://raw.githubusercontent.com/nixzhu/MonkeyKing/master/images/system_share.png" width="240">
 
 Check the demo for more information.
 
 ## Installation
 
-We recommend using Carthage instead of CocoaPods.
+Using Carthage or CocoaPods.
 
 ### Carthage
 
@@ -134,7 +167,7 @@ $ brew install carthage
 To integrate MonkeyKing into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "nixzhu/MonkeyKing" >= 1.1.0
+github "nixzhu/MonkeyKing"
 ```
 
 Then, run the following command to build the MonkeyKing framework:
@@ -179,7 +212,7 @@ platform :ios, '8.0'
 use_frameworks!
 
 target <Your Target Name> do
-    pod 'MonkeyKing', '~> 1.1.0'
+    pod 'MonkeyKing'
 end
 ```
 
@@ -196,7 +229,7 @@ For more information about how to use CocoaPods, I suggest [this tutorial](http:
 ## Contact
 
 NIX [@nixzhu](https://twitter.com/nixzhu),
-Limon [@LimonTop](http://weibo.com/u/1783821582),
+Limon [@Limon](http://weibo.com/u/1783821582),
 Lanford [@Lanford3_3](http://weibo.com/accoropitor) or
 Alex [@Xspyhack](http://weibo.com/xspyhack)
 
